@@ -7,11 +7,11 @@
 #####  I'm an aspiring web developer. I will suit those employers who value flexibility of mind, involvement in the process, the ability to combine efficiency and creativity in their employees.
 
 ### Tech Skills:
-##### * Git
-##### * HTML5
-##### * CSS3
-##### * JavaScript
-##### * React
+* Git
+* HTML5
+* CSS3
+* JavaScript
+* React
 
 ### Soft skills:
 ##### * Teamwork
