@@ -27,7 +27,7 @@
 4. [React.js](https://webheroschool.github.io/todo_kastykina)
 
 ### Experience:
-##### Student Rolling Scopes School
+##### Student of [Rolling Scopes School](https://rs.school/)
 * Studying web development technologies
 * Strong teamwork
 * Work on educational projects
