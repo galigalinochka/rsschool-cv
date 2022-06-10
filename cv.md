@@ -14,23 +14,23 @@
 * React
 
 ### Soft skills:
-##### * Teamwork
-##### * Kanban
-##### * Adaptability
-##### * EQ
-##### * Time management
+* Teamwork
+* Kanban
+* Adaptability
+* EQ
+* Time management
 
 ### Projects:
-##### [Layout project](https://galigalinochka.github.io/Bali)
-##### [JavaScript](https://galigalinochka.github.io/FindBug)
-##### [JavaScript](https://galigalinochka.github.io/JS_play)
-##### [React.js](https://webheroschool.github.io/todo_kastykina)
+1. [Layout project](https://galigalinochka.github.io/Bali)
+2. [JavaScript](https://galigalinochka.github.io/FindBug)
+3. [JavaScript](https://galigalinochka.github.io/JS_play)
+4. [React.js](https://webheroschool.github.io/todo_kastykina)
 
 ### Experience:
 ##### Student Rolling Scopes School
-##### * Studying web development technologies
-##### * Strong teamwork
-##### * Work on educational projects
+* Studying web development technologies
+* Strong teamwork
+* Work on educational projects
 
 ### Languages:
 ##### English - intermediate 2
