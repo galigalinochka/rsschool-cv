@@ -2,10 +2,152 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV Kastykina Galina</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Резюме на курсе RS School">
+    <meta name="keywords" content="программирование, курсы, HTML, CSS, резюме">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body>  
+    <main class="wrapper">
+        <aside class= "sidebar">
+            <img class="avatar" src="images/avatar.jpg" alt="Galina Kastykina_photo">
+            <div class="contacts">
+                <h2 class="title">Contacts</h2>
+                <div>
+                    <span class="contacts-link-type">C:</span><a class="contacts-link" href="tel:79998875808"> + 7 (999) 887-58-08</a>
+                </div>
+                <div>
+                    <span class="contacts-link-type">E:</span><a class="contacts-link" href="mailto:galina.kastykina@gmail.com">galina.kastykina@gmail.com</a>
+                </div>
+            </div>
+            <div class="tech-skills">
+                <h2 class="title">Tech Skills</h2>
+                <ul class="skills-list">
+                    <li class="skills-item"><span class="skills-item-text">Git</span></li>
+                    <li class="skills-item"><span class="skills-item-text">HTML5</span></li>
+                    <li class="skills-item"><span class="skills-item-text">CSS3</span></li>
+                    <li class="skills-item"><span class="skills-item-text">JavaScript</span></li>
+                    <li class="skills-item"><span class="skills-item-text">React</span></li>
+                </ul>
+            </div>
+            <div class="soft-skills">
+                <h2 class="title">Soft Skills</h2>
+                <ul class="skills-list">
+                    <li class="skills-item"><span class="skills-item-text">Teamwork</span></li>
+                    <li class="skills-item"><span class="skills-item-text">Kanban</span></li>
+                    <li class="skills-item"><span class="skills-item-text">Adaptability</span></li>
+                    <li class="skills-item"><span class="skills-item-text">EQ</span></li>
+                    <li class="skills-item"><span class="skills-item-text">Time management</span></li>
+                </ul>
+            </div>
+            <footer>
+                <div class="footer-wrapper">
+                    <ul>
+                        <li class="skills-item"><b>2022 </b></li>
+                        <li class="skills-item"><a class='footer-githubcontacts' href='https://github.com/galigalinochka'> GitHub account Galina Kastykina</a></li>
+                        <li class="skills-item" style ="color: transparent"><a class="footer-courselink" href="https://rs.school/js/">
+                            <img class="footer-course-logo" src="images/rs_school_js.svg" alt="logo of rsschool" width="150" height="100"> 
+                        </a></li>
+                    </ul>
+                </div>
+            </footer>
+        </aside>
+        <div class="main text">
+            <div class='about-me'>
+                <div class="me">
+                    <h2 class='profession'>Front-End Developer</h2> 
+                    <div class="header__menu-icon"> 
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <h1 class='name'>Galina Kastykina</h1>
+                <p class='description'>Hello! I'm an aspiring web developer. I will suit those employers who value flexibility of mind, involvement in the process, the ability to combine efficiency and creativity in their employees. </p>
+            </div>
+        <div class='projects-container'>
+            <h2 class='block-name'>Projects</h2>
+            <ol class='projects-list'>
+                <li class='project-item'>
+                    <a 
+                        class='projects-link' 
+                        href='https://galigalinochka.github.io/Bali'
+                    >
+                    Layout project 
+                    </a>
+                    <span class='dots'>.............................................</span>  
+                     <span><span class='bracket'>[</span> <span class='tech-name'>HTML5, CSS3</span> <span class='bracket'>]</span></span>   
+                </li>
+
+                <li class='project-item'>
+                    <a class='projects-link' 
+                    href='https://galigalinochka.github.io/FindBug'>FindBug</a> 
+                    <span class='dots'>..........................................................</span> 
+                    <span><span class='bracket'>[</span> <span class='tech-name'>JavaScript</span> <span class='bracket'>]</span></span> 
+                </li>
+
+                <li class='project-item'>
+                    <a class='projects-link' 
+                    href='https://webheroschool.github.io/todo_kastykina'>ToDo</a>
+                    <span class='dots'>..................................................................</span> 
+                    <span><span class='bracket'>[</span> <span class='tech-name'>React.js</span> <span class='bracket'>]</span></span>
+                </li>
+
+                <li class='project-item'>
+                    <a class='projects-link' 
+                    href='https://galigalinochka.github.io/JS_play/'>Pokemon's fight</a>
+                    <span class='dots'>........................................</span> 
+                    <span><span class='bracket'>[</span> <span class='tech-name'>JavaScript</span> <span class='bracket'>]</span></span>
+                </li>
+            </ol>
+        </div>  
+        <div class="work-experience">
+            <h2 class='block-name'>Experience</h2>
+                <div class="first-place">
+                    <h4 class="profession-name">Student of <a class='orange-title' href="https://rs.school/">Rolling Scopes School</a></h4>
+                    <span class='time-period'> June 2022 - up to now <span class='devider'> | </span> Russia </span>
+                    <ul class='list'>
+                        <li>Studying web development technologies</li>
+                        <li>Strong teamwork</li>
+                        <li>Work on educational projects</li>
+                    </ul>
+                    <h5>Stack of technologies:</h5>
+                    <ul class='list'>
+                        <li>Git</li>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript</li>
+                        <li>React</li>
+                    </ul>
+                </div>
+        </div>
+        <div class="education">
+            <h2 class='block-name'>Education</h2>
+            <div class="second-university">
+                <h4 class='orange-title'>Moscow Witte University</h4>
+                <h5> Economics and Finance department | Economist</h5>
+                <span class='time-period'> September 2012 - June 2015 <span class='devider'>|</span>Russia </span>
+            </div>
+            <div class="first-university">
+                <h4 class='orange-title'>Nizhny Novgorod National Research University</h4>
+                <h5>Phisycal culture and sport department (honors degree)</h5>
+                <span class='time-period'> September 2005 - June 2010 <span class='devider'>|</span>Russia </span>
+            </div>
+        </div>
+        <div class="languages">
+            <h2 class='block-name'>Languages</h2>
+                <ul class="list">
+                    <li>English | intermediate</li>
+                    <li>German  | beginner</li>
+                </ul>
+        </div>
+        </div>
+        </div>
+    </main>
+    
 </body>
 </html>
