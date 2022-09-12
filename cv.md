@@ -34,3 +34,21 @@ function showMessage(text) {
 
 showMessage();
 ```
+
+### Projects:
+1. [Layout project](https://galigalinochka.github.io/Bali)
+2. [JavaScript](https://galigalinochka.github.io/FindBug)
+3. [JavaScript](https://galigalinochka.github.io/JS_play)
+4. [JavaScript](https://legendary-piroshki-1de69f.netlify.app)
+4. [React.js](https://webheroschool.github.io/todo_kastykina)
+
+### Experience:
+##### Student of [Rolling Scopes School](https://rs.school/)
+* Studying web development technologies
+* Strong independent work and teamwork
+* Work on educational projects
+
+
+### Languages:
+##### English - intermediate 2
+##### German - beginner 2
