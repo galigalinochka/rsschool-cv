@@ -22,3 +22,15 @@
 * Adaptability
 * EQ
 * Time management
+
+### Code example:
+```
+function showMessage(text) {
+    if (text === undefined) {
+        text = 'Введите сообщение';
+    }
+  alert(text);
+}
+
+showMessage();
+```
