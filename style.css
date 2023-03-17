@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -13,7 +17,15 @@ a {
   text-decoration: none;
 }
 
+ul {
+  list-style-type: none;
+}
+
 .header__menu-icon {
+  display: none;
+}
+
+.close {
   display: none;
 }
 
@@ -30,6 +42,10 @@ a {
   background: #1e2939;
   width: 370px;
   padding: 40px 0;
+}
+
+.sidebar_mobile {
+  display: none;
 }
 
 .main {
@@ -103,6 +119,7 @@ a {
 
 .text {
   color: #595959;
+  word-wrap: break-word;
 }
 
 .about-me {
@@ -212,17 +229,33 @@ line-height: 0;
 }
 
 @media(max-width: 690px) {
+  .wrapper {
+    display: block;
+  }
 
-  .projects-container {
-      display: none;
+  .main {
+    padding: 40px 30px;
+  }
+
+  .sidebar_mobile {
+    display: block;
+  }
+
+  .contacts, .tech-skills, .soft-skills {
+    margin: 0;
+    color: #000000;
+  }
+
+  .description {
+    max-width: 580px;
   }
 
   .sidebar {
-      display: none;
+    display: none;
   }
 
   .name {
-      font-size: 30px;
+    font-size: 30px;
   }
 
   .header__menu-icon {
@@ -230,33 +263,47 @@ line-height: 0;
       display: inline-block;
       width: 25px;
       height: 17px;
-      
     }
   
-    .header__menu-icon span {
-      display: block;
-      position: absolute;
-      width: 25px;
-      height: 3px;
-      background: #000000;
-      cursor: move;
-      
-    } 
+  .header__menu-icon span {
+    display: block;
+    position: absolute;
+    width: 25px;
+    height: 3px;
+    background: #000000;
+    cursor: move; 
+  } 
   
-    .header__menu-icon span:nth-child(1) {
-      top: 2px;
-    }
+  .header__menu-icon span:nth-child(1) {
+    top: 2px;
+  }
   
-    .header__menu-icon span:nth-child(2), .header__menu-icon span:nth-child(3) {
-      top: 9px;
-    }
+  .header__menu-icon span:nth-child(2), .header__menu-icon span:nth-child(3) {
+    top: 9px;
+  }
   
-    .header__menu-icon span:nth-child(4) {
-      top: 16px;
-    }
+  .header__menu-icon span:nth-child(4) {
+    top: 16px;
+  }
     
-    .me {
-        display: flex;
-        justify-content: space-between;
-    }
+  .me {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .open {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 40px;
+    right: 15px;
+    /* right: -900px; */
+    overflow-y: scroll;
+    z-index: 1;
+    width: 300px;
+    height: 500px;
+    background-color: #a9acaf;
+    border-radius: 10px;
+  }   
 }

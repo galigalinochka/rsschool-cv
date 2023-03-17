@@ -13,7 +13,7 @@
         <main class="wrapper">
             <aside class= "sidebar">
                 <img class="avatar" src="./img/photo.jpg" alt="photo">
-                <div class="contacts">
+                <div class="contacts" id="contacts">
                     <h3 class="title">Contacts</h3>
                     <div>
                         <span class="contacts-link-type">C:</span><a class="contacts-link" href="tel:017662422973"> + 49 (176) 62422973</a>
@@ -25,7 +25,7 @@
                         <span class="contacts-link-type">Location:</span><span class="contacts-link">Berlin, Germany</span>
                     </div>
                 </div>
-                <div class="tech-skills">
+                <div class="tech-skills" id="tech-skills">
                     <h3 class="title">Tech Skills</h3>
                     <ul class="skills-list">
                         <li class="skills-item"><span class="skills-item-text">Git</span></li>
@@ -38,7 +38,7 @@
                         <li class="skills-item"><span class="skills-item-text">Node.js</span></li>
                     </ul>
                 </div>
-                <div class="soft-skills">
+                <div class="soft-skills" id="soft-skills">
                     <h3 class="title">Soft Skills</h3>
                     <ul class="skills-list">
                         <li class="skills-item"><span class="skills-item-text">Team player | Teamwork</span></li>
@@ -51,7 +51,7 @@
             </aside>
             <div class="main text">
     
-                <div class='about-me'>
+                <div class='about-me' id="about-me">
                     <div class="me">
                         <h2 class='profession'>Frontend Developer</h2> 
                         <div class="header__menu-icon"> 
@@ -62,9 +62,49 @@
                         </div>
                     </div>
                     <h1 class='name'>Galina Kastykina</h1>
+
+                    <section class= "sidebar_mobile">
+                        <div class="contacts">
+                            <h3 class="title">Contacts</h3>
+                            <div>
+                                <span class="contacts-link-type">C:</span><a class="contacts-link" href="tel:017662422973"> + 49 (176) 62422973</a>
+                            </div>
+                            <div>
+                                <span class="contacts-link-type">E:</span><a class="contacts-link" href="mailto:galina.kastykina@gmail.com">galina.kastykina@gmail.com</a>
+                            </div>
+                            <div>
+                                <span class="contacts-link-type">Location:</span><span class="contacts-link">Berlin, Germany</span>
+                            </div>
+                        </div>
+                        <div class="tech-skills">
+                            <h3 class="title">Tech Skills</h3>
+                            <ul class="skills-list">
+                                <li class="skills-item"><span class="skills-item-text">Git</span></li>
+                                <li class="skills-item"><span class="skills-item-text">HTML5</span></li>
+                                <li class="skills-item"><span class="skills-item-text">CSS3</span></li>
+                                <li class="skills-item"><span class="skills-item-text">JavaScript</span></li>
+                                <li class="skills-item"><span class="skills-item-text">React</span></li>
+                                <li class="skills-item"><span class="skills-item-text">TypeScript</span></li>
+                                <li class="skills-item"><span class="skills-item-text">Webpack</span></li>
+                                <li class="skills-item"><span class="skills-item-text">Node.js</span></li>
+                            </ul>
+                        </div>
+                        <div class="soft-skills">
+                            <h3 class="title">Soft Skills</h3>
+                            <ul class="skills-list">
+                                <li class="skills-item"><span class="skills-item-text">Team player | Teamwork</span></li>
+                                <li class="skills-item"><span class="skills-item-text">Kanban | Scrum</span></li>
+                                <li class="skills-item"><span class="skills-item-text">Communication skills</span></li>
+                                <li class="skills-item"><span class="skills-item-text">EQ</span></li>
+                                <li class="skills-item"><span class="skills-item-text">Time management</span></li>
+                            </ul>
+                        </div>
+                        <h3 class="block-name">About me</h3>
+                    </section>
+
                     <p class='description'>I'm a beginner frontend developer. I chose web development because it's a very dynamic area, here you need to be aware of changes constantly, and find new solutions, develop and improve.I am one of those employees who have flexibility of mind, involvement in the process, the ability to combine efficiency and creativity. </p>
                 </div>
-            <div class='projects-container'>
+            <div class='projects-container' id="projects">
                 <h3 class='block-name'>Projects</h3>
                 <ul class='projects-list'>
                     <li class='project-item'>
@@ -130,7 +170,7 @@
                     </li>
                 </ul>
             </div>  
-            <div class="work-experience">
+            <div class="work-experience" id="work-experience">
                 <h3 class='block-name'>Work Experience</h3>
                     <div class="first-place">
                         <div class = "prof">
@@ -178,7 +218,7 @@
                         </ul>
                     </div>
             </div>
-            <div class="education">
+            <div class="education" id="education">
                 <h3 class='block-name'>Education</h3>
                 <div class="second-university">
                     <h4 class='orange-title'>Moscow Witte University</h4>
@@ -193,7 +233,7 @@
                 </div>
             </div>
             </div>
-        </main>
-        
+        </main>   
+        <script src="index.js"></script>
     </body>
     </html>
