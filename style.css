@@ -21,7 +21,7 @@ ul {
   list-style-type: none;
 }
 
-.header__menu-icon {
+.burger-menu {
   display: none;
 }
 
@@ -233,6 +233,19 @@ line-height: 0;
     display: block;
   }
 
+  .wrapper.dark {
+    position: relative;
+    background:#f5f7fa;
+    opacity: 0.5;
+    z-index: 4;
+    transition: all 0.8s ease;
+  }
+ 
+
+  body.lock {
+    overflow: hidden;
+  }
+
   .main {
     padding: 40px 30px;
   }
@@ -254,56 +267,90 @@ line-height: 0;
     display: none;
   }
 
+  .list-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .list-item {
+    display: block;
+    color: black;
+    font-weight: 700;
+    font-size: 22px;
+    margin-bottom: 24px;
+  }
+
   .name {
     font-size: 30px;
   }
 
-  .header__menu-icon {
-      position: relative;
-      display: inline-block;
-      width: 25px;
-      height: 17px;
-    }
+  .burger-menu {
+    position: fixed;
+    right: 70px;
+    top: 94px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 18px;
+    cursor: pointer;
+    z-index: 101;
+    transition: all 1.2s linear 0s;
+  }
   
-  .header__menu-icon span {
-    display: block;
-    position: absolute;
+  .burger-menu span {
     width: 25px;
     height: 3px;
     background: #000000;
     cursor: move; 
+    transition: all 1.2s linear 0s;
   } 
   
-  .header__menu-icon span:nth-child(1) {
-    top: 2px;
-  }
-  
-  .header__menu-icon span:nth-child(2), .header__menu-icon span:nth-child(3) {
+  .span-first.active {
     top: 9px;
-  }
-  
-  .header__menu-icon span:nth-child(4) {
-    top: 16px;
-  }
-    
-  .me {
-    display: flex;
-    justify-content: space-between;
+    transform: rotate(45deg);
+    position: relative;
+    transition: all 1.2s linear 0s;
   }
 
-  .open {
+  .span-second.active {
+  transform: scale(0); 
+ }
+  
+  .span-third.active {
+    position: relative;
+    transform: rotate(-45deg);
+    transition: all 1.2s linear 0s;
+    bottom: 7px; 
+  }
+    
+  /*.me {
+    display: flex;
+    justify-content: space-between;
+  }*/
+
+  .menu-mobile {
     display: flex;
     justify-content: center;
     align-items: center;
     position: fixed;
     top: 40px;
-    right: 15px;
-    /* right: -900px; */
     overflow-y: scroll;
-    z-index: 1;
+    z-index: 10;
     width: 300px;
     height: 500px;
     background-color: #a9acaf;
     border-radius: 10px;
+    transition: all 0.8s linear 0s;
   }   
+
+  .menu-mobile.open {
+    right: 15px;
+    transition: all 1.2s linear 0s;
+  }
+
+  .menu-mobile.close {
+    right: -300px;
+    transition: all 1.2s linear 0s;
+  }
 }
