@@ -4,6 +4,8 @@ const spanSecond = document.querySelector('.span-second');
 const spanThird = document.querySelector('.span-third');
 const wrapper = document.querySelector('.wrapper');
 const body = document.querySelector('body');
+const listItems = document.querySelectorAll('.list-item');
+
 const burgerMenu = document.createElement('div');
 burgerMenu.classList.add('menu-mobile');
 
@@ -22,12 +24,16 @@ burgerMenu.innerHTML = `
 burgerMenu.classList.add('close');
 wrapper.append(burgerMenu);
 
-menuIcon.addEventListener('click', function() {
-  spanFirst.classList.toggle('active');
-  spanSecond.classList.toggle('active');
-  spanThird.classList.toggle('active');
-  burgerMenu.classList.toggle('close');
-  burgerMenu.classList.toggle('open');
-  body.classList.add('lock');
-  wrapper.classList.add('dark');
-});
+document.addEventListener('click', function(e) {
+  
+  if (e.target.classList.contains('list-item') || e.target.closest('.burger-menu') || e.target.closest('.dark')) {
+    spanFirst.classList.toggle('active');
+    spanSecond.classList.toggle('active');
+    spanThird.classList.toggle('active');
+    burgerMenu.classList.toggle('close');
+    burgerMenu.classList.toggle('open');
+    body.classList.toggle('lock');
+    wrapper.classList.toggle('dark');
+    console.log('click');
+  } 
+})
