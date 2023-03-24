@@ -26,7 +26,7 @@ wrapper.append(burgerMenu);
 
 document.addEventListener('click', function(e) {
   
-  if (e.target.classList.contains('list-item') || e.target.closest('.burger-menu') || e.target.closest('.dark')) {
+  if (e.target.classList.contains('list-item') || e.target.closest('.burger-menu') || !e.target.classList.contains('menu-mobile')) {
     spanFirst.classList.toggle('active');
     spanSecond.classList.toggle('active');
     spanThird.classList.toggle('active');
@@ -34,6 +34,5 @@ document.addEventListener('click', function(e) {
     burgerMenu.classList.toggle('open');
     body.classList.toggle('lock');
     wrapper.classList.toggle('dark');
-    console.log('click');
   } 
 })
