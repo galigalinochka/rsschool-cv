@@ -22,11 +22,12 @@ burgerMenu.innerHTML = `
     </ul>
   </nav>`;
 burgerMenu.classList.add('close');
-wrapper.append(burgerMenu);
+body.append(burgerMenu);
 
 document.addEventListener('click', function(e) {
-  
-  if (e.target.classList.contains('list-item') || e.target.closest('.burger-menu') || !e.target.classList.contains('menu-mobile')) {
+  if (!wrapper.classList.contains('dark') && !e.target.closest('.burger-menu')) return;
+
+  else if (e.target.classList.contains('list-item') || e.target.closest('.burger-menu') || !e.target.classList.contains('menu-mobile')) {
     spanFirst.classList.toggle('active');
     spanSecond.classList.toggle('active');
     spanThird.classList.toggle('active');
