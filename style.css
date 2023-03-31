@@ -17,34 +17,8 @@ a {
   text-decoration: none;
 }
 
-/*ul {
-  list-style-type: none;
-}*/
-
 .burger-menu {
   display: none;
-  /*width: 35px; /* поддерживаются любые единицы, в том числе проценты 
-  margin: 0 auto;
-  background: silver;
-  border-radius: 50%;*/
-}
-
-.burger-menu::before {
-  /*content: '';
-  width: 35px;
-  height: 35px;
-  border-radius: 25%;
- background-color: #595959;
- opacity: 0.5;*/
-  /*width: 35px;  поддерживаются любые единицы, в том числе проценты 
-  margin: 0 auto;
-  background: silver;
-  border-radius: 50%;
-
-  content: "";
-  display: inline-block;
-  vertical-align: middle;
-  padding-top: 100%;*/
 }
 
 .close {
@@ -230,15 +204,6 @@ line-height: 0;
 
 @media(max-width: 1150px) {
 
-  .round {
-    position: fixed;
-    right: 70px;
-    top: 94px;
-    width: 35px;
-    height: 35px;
-    background-color: #ff6b08;
-  }
-
   .projects-list {
     display: block;
     padding-left: 0;
@@ -283,7 +248,6 @@ line-height: 0;
     transition: all 0.6s ease;
   }
  
-
   body.lock {
     overflow: hidden;
   }
@@ -326,6 +290,18 @@ line-height: 0;
   .name {
     font-size: 30px;
   }
+  
+  .round {
+    position: fixed;
+    right: 62.5px;
+    top: 83px;
+    width: 40px;
+    height: 40px;
+    background-color: #ff6b08;
+    z-index: 100;
+    border-radius: 50%;
+    opacity: 0.8;
+  }
 
   .burger-menu {
     position: fixed;
@@ -365,11 +341,6 @@ line-height: 0;
     transition: all 0.6s linear 0s;
     bottom: 7px; 
   }
-    
-  /*.me {
-    display: flex;
-    justify-content: space-between;
-  }*/
 
   .menu-mobile {
     display: flex;
