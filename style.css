@@ -325,7 +325,7 @@ line-height: 0;
   } 
   
   .span-first.active {
-    top: 9px;
+    top: 8.8px;
     transform: rotate(45deg);
     position: relative;
     transition: all 0.6s linear 0s;
@@ -339,7 +339,7 @@ line-height: 0;
     position: relative;
     transform: rotate(-45deg);
     transition: all 0.6s linear 0s;
-    bottom: 7px; 
+    bottom: 6.2px; 
   }
 
   .menu-mobile {
